@@ -42,7 +42,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
-                href="#gallery"
+                href="/gallary"
                 className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">

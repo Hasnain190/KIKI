@@ -3,10 +3,11 @@ import Hero from "../src/components/Hero";
 import Gallery from "../src/components/Gallery";
 import Stats from "../src/components/Stats";
 import SocialLinks from "../src/components/SocialLinks";
+import PageTransition from "src/components/PageTransition";
 
 export default function Home() {
   return (
-    <>
+    <PageTransition>
       <Hero />
       <section className="mt-12">
         <Gallery />
@@ -17,6 +18,6 @@ export default function Home() {
 
         <Stats />
       </section>
-    </>
+    </PageTransition>
   );
 }
