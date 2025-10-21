@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Gallery() {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<any>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<any>(null);
 
   const images = [
     {

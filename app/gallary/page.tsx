@@ -3,8 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Gallery() {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<any>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const images = [
     { src: "/images/g1.jpg", title: "Moment 1", category: "Life" },

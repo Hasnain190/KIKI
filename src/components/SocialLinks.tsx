@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function SocialLinks() {
-  const [hoveredLink, setHoveredLink] = useState(null);
+  const [hoveredLink, setHoveredLink] = useState<any>(null);
 
   const links = [
     {

@@ -89,7 +89,7 @@ export default function Stats() {
     return () => clearInterval(interval);
   }, []);
 
-  const formatNumber = (num, key) => {
+  const formatNumber = (num: number, key: string) => {
     if (key === "instagram") return `${(num / 1000).toFixed(1)}k`;
     if (key === "facebook") return `${(num / 1000).toFixed(1)}k`;
     if (key === "posts") return `${(num / 1000).toFixed(1)}k`;
@@ -161,7 +161,10 @@ export default function Stats() {
                       className={`text-3xl md:text-4xl font-extrabold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}
                     >
                       {isVisible
-                        ? formatNumber(counts[stat.key], stat.key)
+                        ? formatNumber(
+                            counts[stat.key as keyof typeof counts],
+                            stat.key
+                          )
                         : "0"}
                     </div>
                     <div className="text-sm md:text-base font-medium text-gray-700">
